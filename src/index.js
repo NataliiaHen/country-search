@@ -16,9 +16,6 @@ function onSearch(e) {
   API.fetchCountries(letterSearch)
     .then(countries => {
       clearData();
-      if (countries.length === 0) {
-        Notiflix.Notify.failure('Oops, there is no country with that name');
-      }
       if (countries.length === 1) {
         refs.countryInfo.innerHTML = countryCardTpt(countries[0]);
       }
