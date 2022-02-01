@@ -1,0 +1,10 @@
+<div class='title'>
+  <img src='{{flags.svg}}' alt='{{name}}' height='30' />
+  <h1 class='country-name'>{{name}}</h1>
+</div>
+<p class='country-description'> <span class='descrTitle'>Capital: </span>{{capital}}</p>
+<p class='country-description'> <span class='descrTitle'>Population: </span>{{population}}</p>
+<h2>Languages:</h2>
+{{#each languages}}
+  <p class='country-description'>{{name}}</p>
+{{/each}}
